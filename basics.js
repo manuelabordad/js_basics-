@@ -74,3 +74,14 @@ console.log(true || false); // true
 //NOT give the oposite result
 let eligibleForLoan = true;
 let applicationRefused = !eligibleForLoan; // false
+//Falsy
+// undefined
+// null
+// 0
+// false
+// ''
+// NaN
+false || "mosh"; //'mosh'
+false || 1; // 1
+false || 1 || 2; // 1 as soon we find a truthy operator is returned
+// we can create default values with ||
