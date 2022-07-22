@@ -85,3 +85,51 @@ false || "mosh"; //'mosh'
 false || 1; // 1
 false || 1 || 2; // 1 as soon we find a truthy operator is returned
 // we can create default values with ||
+
+// If and else
+let hour = 12;
+if (hour >= 6 && hour < 12) {
+	console.log("Good morning");
+} else if (hour >= 12 && hour < 18) {
+	console.log("Good afernoon");
+} else {
+	console.log("Good Night");
+}
+
+//Switch and case
+// compare the value of a variable against other values, but is a better practice to use if else
+
+// LOOPS
+//for
+// initial expresion   condition   increment expresion
+for (let i = 0; i < 5; i++) {
+	if (i % 2 !== 0) console.log("impar" + i); // if the % of i /2 is not 0 it´s an odd number
+}
+
+//while
+let i = 0; // global variable
+while (i <= 5) {
+	if (i % 2 !== 0) console.log("impar" + i);
+	i++;
+}
+
+// Do - while -----> condition evaluated at end so is executed at least 1 time
+let a = 9;
+do {
+	if (i % 2 !== 0) console.log("impar" + i);
+	i++;
+} while (i <= 5);
+
+// for in ----> properties of an object
+const person = {
+	name: "Manuela",
+	age: 20,
+	profession: "engineer",
+};
+for (let key in person) {
+	console.log(key, person[key]); // [] notation when we dont know the propery we want to access
+}
+
+//for of ---> elements os an array
+const colorss = ["red", "blue", "yellow"];
+for (let color of colorss) console.log(color);
